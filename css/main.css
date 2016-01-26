@@ -1,28 +1,24 @@
-﻿
-
 html{
-	position: relative;
-	background-color: #fff;
+	background:#000;
 }
 
 body{
-	background: transparent;
-	position: relative;
-	background-color: black;
-
-	margin:25px 25px 25px 25px !important;
-	background-image: url(../img/bg.jpg) !important;
-  	background-repeat: repeat !important;
-  	background-size: cover !important;
-  	background-position: 0% 0% !important;
+	position: relative
+	margin:25px 25px 25px 25px;
+	background-image: url(../img/bg1.jpg);
+  	background-repeat: repeat;
+  	background-size: cover;
+  	background-position: 0% 0%;
   	background-attachment: fixed;
   	font-family: 'Open Sans', sans-serif;
-}
-a:focus {
+ }
+
+ a:focus {
 	outline: 0;
 }
+
 #loader {
-    background: #ffffff ;
+    background: #ffffff;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -42,29 +38,10 @@ a:focus {
 }
 
 
-/* Menu Button 
-
-.menu-button {
-	position: fixed;
-	top: 15px;
-	left: 40px;
-	z-index: 1000;
-	padding: 0;
-	width: 50px;
-	height: 50px;
-	font-size: 35px;
-	border: 0;
-  	outline: 0;
-	color: #111;
-	background: transparent;
-}
-
---------------------------------------------------
-	01. Navigation menu
----------------------------------------------------*/
+/* nav */
 
 #headerBar {
-	z-index: 999;
+	z-index: 9999;
   	width: 100%;
   	height: auto;
   	min-height: 80px;
@@ -73,8 +50,10 @@ a:focus {
   	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
   	position: fixed;
   	top: 0px;
-  	background: #fff;
-  	box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+  	background: rgba(0.2,0,0,0);
+  	box-shadow: 0px 7px 16px 0px rgba(20, 20, 20, 0.1);
+  	margin-left: -25px;
+
 }
 #headerBar .container {
 	padding: 0;
@@ -104,46 +83,49 @@ a:focus {
   	transition: 0.3s;
   	font-family: "Montserrat", sans-serif;
   	text-transform: uppercase;
-  	color: #111;
+  	color: #c8b098;
 }
 .navbar li.active a {
 	color: #a74752;
-	border-bottom: 2px solid #a74752;
+	border-bottom: 5px solid #a74752;
+}
+.navbar li a:hover{
+	color:#42dca3;
 }
 .navbar-toggle {
 	font-size: 30px;
 	cursor: pointer;
 }
 
+/* Intro */
 
-
-
-/*--------------------------------------------------
-	02. section Intro
----------------------------------------------------*/
 #sectionIntro {
   	position: relative;
   	width: 100%;
   	min-height: 670px;
+  	margin-bottom: 0px;
 	background-size: cover; 
-  	background: url(../img/toughmudder.jpg) repeat;
-  	background-size: cover;
+  	
+  	background-size:;
+  	background-color: transparent;
+
 }  	
 
 .textIntro {
 	margin-right: auto;
 	margin-top: 14%;
 	text-align: left;
-	background-color: #fff;
+	background-color: transparent;
 	padding:50px;
 	padding-bottom: 30px;
+
 }
 
 .hi h1 {
 	letter-spacing: 0.08em;
 	font-size: 40px;
 	font-weight: 700;
-	color: #111;
+	color: #c8b098;
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
 }
@@ -154,7 +136,7 @@ a:focus {
 	padding-bottom: 0px;
 	font-family: "Tangerine", sans-serif;
 	font-size: 30px;
-	color: #a74752;
+	color: #fff;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -166,55 +148,49 @@ a:focus {
 	line-height: 30px;
 	padding: 20px 0;
 	max-width: 600px;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 1px;
-	color:#888 !important;
+	color:#42dca3 !important;
 }
 
 
-/*--------------------------------------------------
-	03. section About
----------------------------------------------------*/
+
+/*About*/
+
 
 #sectionAbout{
-	background-color: #fff;
 	padding-bottom: 100px;
+	background: rgba(0,0,0,0.4);
 }
-
 .sectionTitle{
 	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
 }
 .LessPaddingTitle{
-	padding-bottom: 70px !important;
+	padding-bottom: 70px;
 }
 .sectionTitle h1{
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	color:#111;
-	font-weight: bold;
-	margin: 25px 0;
+	font-family: "Montserrat", serif;
+	letter-spacing: 1px;
+	font-weight: 800;
 	font-size: 40px;
-}
-.whiteTitle{
-	color: #fff !important;
+	color:#c8b098;
 }
 .sectionTitle h6{
 	font-family: 'Tangerine', sans-serif;
 	font-size: 14px;
 	line-height: 30px;
 	letter-spacing: 1px;
-	color:#a74752;
-	font-size: 32px;
+	color:#fff;
+	font-size: 30px;
 	font-weight: 700;
 }
 
 .story{
 	color: #111;
 	text-align: left;
-	background-color:#f9f7f8;
+	background-color: transparent;
 }
 
 .storyText{
@@ -227,12 +203,13 @@ a:focus {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 40px;
+	color: #fff;
 }
 
 .storyText h6{
 	font-family: "Montserrat", sans-serif;
 	font-size: 12px;
-	color:#a74752;
+	color:#42dca3;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -246,57 +223,29 @@ a:focus {
 	margin-bottom: 30px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color:#333;
+	color:#c8b098;
 }
-
-.about img{
-	text-align: center;
-	margin-left: -20px !important;
-}
-
-/*.quote{
-	background-color: #a74752;
-	padding: 20px 55px;
-	padding-top: 30px;
-}
-
-.quote h4{
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 25px;
-	color:#fff;
-}
-
-.quote p{
-	font-family: 'Roboto Slab', sans-serif;
-	font-size: 14px;
-	text-align: left;
-	line-height: 30px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	color:#fff;
-}
-
-.quote h5{
-	font-family: "Tangerine", sans-serif;
+.img-responsive{
 	text-align: right;
-	font-weight: 700;
-	letter-spacing: 0.08em;
-	color:#fff;
-	font-size: 30px;
-	margin-top: 10px;
+	margin-left: 280px !important;
+	position: relative;
+	top: -50px;
+	left: -300px;
+}
+
+.myLife h6{
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 15px;
+	color:#42dca3;
+	letter-spacing: 0.1em;
+	
+	font-weight: 300;
 }
 
 
-
---------------------------------------------------
-	04. section Resume
----------------------------------------------------*/
-
+/*Resume*/
 #sectionResume{
-	background: #c3d7d8;
+	background: rgba(0,0,0,0.2);
 	padding-bottom: 100px;
 }
 
@@ -305,12 +254,12 @@ a:focus {
 	-moz-padding-start:0px;
 }
 .resumeList li.resTitle{
-	background-color: #a74752;
+	background-color: transparent;
 	color:#fff;
 }
 .resumeList li {
 	list-style: none;
-	background:#ffffff;
+	background:transparent;
 	padding: 20px 20px 10px 20px;
 	margin: 0 0 30px 0;
 }
@@ -329,6 +278,7 @@ a:focus {
 	font-weight: 700;
 	margin-bottom: 5px;
 	font-family: "Montserrat", sans-serif;
+	color:#42dca3;
 }
 .resumeList span {
 	font-family: 'Tangerine', sans-serif;
@@ -345,14 +295,14 @@ a:focus {
 	line-height: 30px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color:888;
+	color:#42dca3;
 }
 .resumeIcon {
 	float: left;
 	font-size: 30px;
 	width: 50px;
 	height: 50px;
-	background: #a74752;
+	background: #42dca3;
 	color:#fff;
 	padding: 8px 11px;
 	border-radius: 50%;
@@ -363,13 +313,15 @@ a:focus {
 	padding-left: 65px;
 }
 
-/*--------------------------------------------------
-	05. section Portfolio
----------------------------------------------------*/
+.resumeList li{
+	border-top:1px solid #fff;
+}
 
-#sectionPortfolio{
+/* Portfolio */
+
+#sectionPortfolio {
 	padding-bottom: 100px;
-	background: #f9f7f8;
+	background: rgba(0,0,0,0.6);
 }
 .mGrid img{
 	width: 100%;
@@ -489,160 +441,13 @@ a:focus {
 }
 
 
-/*--------------------------------------------------
-	06. section Services
----------------------------------------------------
-#sectionServices{
-	padding-bottom: 100px;
-	background: #fff;
-	position: relative;
-}
-.servicesRow .col-md-6{
-	margin-bottom: 30px;
-}
-.servicesBox {
-	background: #f9f7f8;
-	padding: 30px 40px;
-	padding-bottom: 20px;
-}
-.servicesBox:hover .servicesIcon{
-	color:#f9f7f8; 
-}
-.servicesContent {
-	padding: 10px 5px 5px 0px;
-}
-.servicesContent h4 {
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 0.08em;
-	font-weight: 700;
-	margin-bottom: 20px;
-}
-.servicesContent h6{
-	font-family: 'Tangerine', sans-serif;
-	font-size: 28px;
-	letter-spacing: 1px;
-	margin: 15px 0px;
-	margin-bottom: 25px;
-	color: #a74752;
-	font-weight: 700;
-}
-.servicesContent p{
-	font-family: 'Roboto Slab', sans-serif;
-	font-size: 14px;
-	text-align: left;
-	line-height: 30px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	color:888;
-}
-.servicesIcon {
-	font-size: 30px;
-	width: 50px;
-	height: 50px;
-	background: #a74752;
-	padding: 8px 11px;
-	padding-top: 10px;
-	padding-right: 16px;
-	border-radius: 50%;
-	color:#fff;
-	margin-bottom: 10px;
-	transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-}
 
---------------------------------------------------
-	07. section Blog
----------------------------------------------------
+/*contact*/
 
-#sectionBlog {
-	position: relative;
-  	background: #c3d7d8;
-  	z-index: 200;
-  	padding-bottom: 100px;
-}
-.blog-item {
-	margin-left: 10px;
-	margin-bottom: 50px;
-	padding: 25px;
-	text-align: left;
-	margin-top: 10px;
-	background-color: #fff;
-}
-.blog-padding{
-	padding: 32px 25px !important;
-}
-.item-margin{
-	margin-right: 3.3%;
-}
-.blog-item p {
-	font-family: 'Roboto Slab', sans-serif;
-	font-size: 12px;
-	text-align: left;
-	line-height: 30px;
-	font-weight: 300;
-	letter-spacing: 1px;
-	color:#aaa;
-}
-.blog-item img{
-	width: 100%;
-	height: 100%;
-	margin-bottom: 20px;
-}
-.blog-item h3 {
-	font-family: "Montserrat", sans-serif;
-	color:#333;
-	font-weight: bold !important;
-	font-size: 16px;
-	text-transform: uppercase;
-	margin-bottom: 15px;
-	letter-spacing: 0.08em;
-	line-height: 25px;
-}
-.blog-item h6{
-	padding-top:10px;
-	border-top: 1px solid #c3d7d8;
-	text-align: left;
-	color:#a74752;
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.04em;
-	font-size: 12px;
-	font-weight: 700;
-}
-span.separator{
-	margin: 0px 10px;
-}
-.blog-item h6 a{
-	color:#a74752;
-}
-.blog-item a:focus, .blog-item a:hover{text-decoration: none;}
-.blog-item b a {
-	font-size: 12px;
-	letter-spacing: 1px;
-	color: #333;
-	font-weight: 400 !important;
-}
-.blog-item:hover img {
-	-webkit-animation-name: pulse;
-	animation-name: pulse;
-	-webkit-animation-duration: .7s;
-	animation-duration: .7s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-
-}
---------------------------------------------------
-	08. section Contact
----------------------------------------------------*/
-
-/* ====GENERAL FORM STYLES==== */
-
-#sectionContact{
+#sectionContact {
 	margin-bottom: 0px;
 	padding-bottom: 100px;
-	background: #fbfbfb;
+	background: rgba(0,0,0,0.6);
 }
 input, textarea, select {
 	background:#eee;
@@ -680,7 +485,7 @@ input.submit {
 	width: auto;
 	cursor: pointer;
 	position: relative;
-    background: #111;
+    background: #333;
     color: #fff;
     border:none;
     padding: 15px 50px;
@@ -913,12 +718,14 @@ body{
 	text-align: center;
 	line-height: 30px;
 }
-};
 
-
-@media(max-width:1020px){
-	.item-padding{
+@media(max-width: 450px) {
+	.about img{
 		display: none;
 	}
-};
-
+}
+@media(max-width: 1000px) {
+	.one img{
+		display: none;
+	}
+}

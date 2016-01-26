@@ -29,7 +29,7 @@
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
   </head>
 
-<body>
+<body data-spay="scroll" data-target="#navbar-example">
 <!--Loader-->
 <div id="loader">
 	<div id="loaderInner"></div>
@@ -44,7 +44,7 @@
 		<div class="col-md-8 col-sm-10 col-xs-8 headerRight">
 			<div class="header-right">
 				<!--nav-->
-				<nav>
+				<nav id="navbar-example">
 					<div class="navbar-header">
 						<span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<i class="fa fa-bars"></i>
@@ -75,7 +75,7 @@
 				<div class="hi">
 					<h1>Lewhat Weldetnesae</h1>
 					<h4>Web Developer</h4>
-					<p>Highly motivated and driven web designer taught and mentored by exprienced instructors at Codify Academy.</p>
+					<p>Highly motivated and driven web developer in San Francisco Bay Area.</p>
 				</div>
 			</div>
 		</div>
@@ -96,11 +96,11 @@
 				<div class="profileText">
 
 
-					<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="col-md-4 col-sm-4 col-xs-4">
 						<div class="storyText">
 							<h4>Profile</h4>
 							<h6>Complete name:</h6>
-							<p>Lewhat Weldetnesae</p>
+							<p>Lewhat<br> <br> <br>Weldetnesae</p>
 							<h6>Phone number:</h6>
             				<p>(916)-548-4179</p>
             				<h6>Website:</h6>
@@ -111,9 +111,16 @@
            			</div>
 
 
-           			<div class+"col-md-4 col-sm-3 col-xs-12">
-           				<img src="img/me.jpg" width="459" height="362"> <!--need an image-->
+           			<div class="col-md-4 col-sm-4 col-xs-4">
+           				<img class="img-responsive" src="img/tm3.png"  >
            			</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<div class="myLife">
+							<h6> My  name   is   Lewhat   Weldetnesae,   and   I’m   San   Francisco   Bay   area   based   web   developer.  I   like   building   everything   from   small   web   sites   to   more   interactive   and   responsive   apps.   When   I’m   not   developing   web   sites,   I like   to   ride   my   motorcycle   on   the   mountains   of   Berkeley,   Napa,   or any nearby twisty road that I can find on the map.  I have various skills ranging from project management, to design and development via numerous languages such as HTML, CSS, and JavaScript. Feel free to go through my samples in my portfolio. If you are a business or employer in search of a web Developer, you can contact me <a href="#sectionContact" class="easing">here</a>
+							</h6> 
+						</div>
+					</div>    			
            		</div>
 <!--skill here----------------------- -->
 
@@ -156,6 +163,7 @@
 							</p>
 						</div>
 					</li>
+					
 					<li>
 						<div class="resumeIcon">
 							<div class="icon icon-basic-book">
@@ -170,6 +178,7 @@
 							</p>
 						</div>
 					</li>
+					
 					<li>
 						<div class="resumeIcon">
 							<div class="icon icon-basic-book">
@@ -203,6 +212,7 @@
                                 <p class="plineheight">LUXE</p>
                             </div>
                         </li>
+                        
                         <li>
                             <div class="resumeIcon">
                                 <div class="icon icon-basic-case">
@@ -215,6 +225,8 @@
                                 <p class="plineheight"> ASUCD UNITRANS</p>
                             </div>
                         </li>
+                        <br>
+                       
                         <li>
                             <div class="resumeIcon">
                                 <div class="icon icon-basic-case">
@@ -239,7 +251,7 @@
 <section id="sectionPortfolio">
 	<div class="sectionTitle">
 		<h1>Portfolio</h1>
-		<h6>My latest works</h6>
+		<h6>My Sample Works</h6>
 	</div>
 
 	<div class="container">
@@ -274,7 +286,7 @@
 			                 </div>
 			        </a>
 			        <div id="image-modal2" class="mfp-hide modal-box">
-	                  	<img src="img/p5.jpg">
+	                  	<img src="img/p5.jpg" class="img-responsive">
 		                <div class="modal-box-content">
 		                 	<h6>contact me if intersted on this design</h6>
 		                </div>
@@ -286,14 +298,14 @@
 		    
 		        <div class="grid-item item-five item-padding" style="float:right; position: relative;top:0px; left:300px;">
 	            	<a class="image-modal" href="#image-modal3">
-	            		<img src="img/p4.png" >
+	            		<img src="img/p4.png">
 	            			<div class="itemHover">
 			                    <h6>Bussiness Website</h6>
 			                    <h4>37signal Replica</h4>
 			                 </div>
 			        </a>
 			        <div id="image-modal3" class="mfp-hide modal-box">
-	                  	<img src="img/p4.png" >
+	                  	<img src="img/p4.png">
 		                <div class="modal-box-content">
 		                 	<h6>contact me if intersted on this design</h6>
 		                </div>
@@ -324,14 +336,14 @@
 		    	<div class="one">
 		         <div class="grid-item item-five item-padding" style="float:right; position: relative;top:-200px; right:300px">
 	            	<a class="image-modal" href="#image-modal5">
-	            		<img src="img/p2.png">
+	            		<img src="img/p2.png" >
 	            			<div class="itemHover">
 			                    <h6>Flat Designs</h6>
 			                    <h4>colors</h4>
 			                 </div>
 			        </a>
 			        <div id="image-modal5" class="mfp-hide modal-box">
-	                  	<img src="img/p2.png">
+	                  	<img src="img/p2.png" >
 		                <div class="modal-box-content">
 		                 	<h6>contact me if intersted on this design</h6>
 		                </div>
@@ -360,7 +372,7 @@
 		    </div>
 	</div>
 	</div>
-</section>
+</section> 
 
 <!--contact-->
 
@@ -376,7 +388,7 @@
 
                     <div class="col-md-12 col-sm-12 col-xs-12">
 	                    <div id="message"></div>
-		                    <form method="post" action="assets/contact.php" name="contactform" id="contactform">
+		                    <form method="post" action="MAILTO:lewhat@live.com" name="contactform" enctype="text/plain" id="contactform">
 		                    <fieldset>
 		                      <div class="col-md-4 col-sm-6 col-xs-12">
 		                        <input name="name" type="text" id="name" placeholder="Name* :" size="30" value="" />
@@ -390,7 +402,7 @@
 		                      <div class="col-md-12 col-sm-12 col-xs-12">
 		                        <textarea name="comments" cols="40" rows="3" placeholder="Message* :" id="comments"></textarea>
 		                      </div>
-		                        <input type="submit" class="submit" id="submit" value="Send message" />
+		                        <input type="submit" class="submit" id="submit" value="Submit" />
 		                    </fieldset>
 		                    </form>
 	                    
