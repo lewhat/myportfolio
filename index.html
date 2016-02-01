@@ -29,7 +29,7 @@
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
   </head>
 
-<body data-spay="scroll" data-target="#navbar-example">
+<body data-spay="scroll" data-target="#navbar-head">
 <!--Loader-->
 <div id="loader">
 	<div id="loaderInner"></div>
@@ -44,7 +44,7 @@
 		<div class="col-md-8 col-sm-10 col-xs-8 headerRight">
 			<div class="header-right">
 				<!--nav-->
-				<nav id="navbar-example">
+				<nav id="navbar-example" role="navigation">
 					<div class="navbar-header">
 						<span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<i class="fa fa-bars"></i>
@@ -92,7 +92,7 @@
 
 <section id="sectionAbout">
 	<div class="sectionTitle">
-		<h1>About me</h1>
+		<a href="#sectionAbout" class="easing"><h1>About me</h1></a>
 		<h6>Let me introduce myself</h6>
 	</div>
 
@@ -102,7 +102,7 @@
 				<div class="profileText">
 
 
-					<div class="col-md-4 col-sm-4 col-xs-4">
+					<div class="col-md-4 col-sm-6 col-xs-6">
 						<div class="storyText">
 							<h4>Profile</h4>
 							<h6>Complete name:</h6>
@@ -117,11 +117,11 @@
            			</div>
 
 
-           			<div class="col-md-4 col-sm-4 col-xs-4">
+           			<div class="col-md-4 col-sm-6 col-xs-6 three">
            				<img class="img-responsive toughm animated" src="img/tm3.png"  >
            			</div>
 
-					<div class="col-md-4 col-sm-4 col-xs-4">
+					<div class="col-md-4 col-sm-12 col-xs-12">
 						<div class="myLife">
 							<h6> My  name   is   Lewhat   Weldetnesae,   and   I’m   San   Francisco   Bay   area   based   web   developer.  I   like   building   everything   from   small   web   sites   to   more   interactive   and   responsive   apps.   When   I’m   not   developing   web   sites,   I like   to   ride   my   motorcycle   on   the   mountains   of   Berkeley,   Napa,   or any nearby twisty road that I can find on the map.  I have various skills ranging from project management, to design and development via numerous languages such as HTML, CSS, and JavaScript. Feel free to go through my samples in my portfolio. If you are a business or employer in search of a web Developer, you can contact me <a href="#sectionContact" class="easing">here</a>
 							</h6> 
@@ -132,6 +132,9 @@
 
 
 <!-- qoute here ---------------------- -->
+					<div class="col-md-12 col-sm-12 col-xs-12 sectionTitle">
+					<h6>“If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you.”<br> -Zig Ziglar</h6>
+					</div>
 
 			</div>
 		</div>
@@ -145,14 +148,20 @@
 
 <!--tite-->
 	<div class="sectionTitle">
+		
 		<div class="uni">
 		<img src="img/unidispatch.jpg" class="img-responsive">
 		</div>
+		
+		 
 		<h1>Resume</h1>
 		<h6 class="whiteTitle">More about my past</h6>
+		
+		 
 		<div class="capo">
 		<img src="img/capo.png" class="img-responsive">
 		</div>
+	
 
 	</div>
 
@@ -162,7 +171,7 @@
 			<div class="col-md-6 resumeEd">
 				<ul class="resumeList">
 					<li class="resTitle"><h4>Education</h4></li>
-					<li>
+					<li class="one">
 						<div class="resumeIcon">
 							<div class="icon icon-basic-book">
 								<i class="fa fa-book"></i>
@@ -177,7 +186,7 @@
 						</div>
 					</li>
 					
-					<li>
+					<li class="two">
 						<div class="resumeIcon">
 							<div class="icon icon-basic-book">
 								<i class="fa fa-book"></i>
@@ -192,7 +201,7 @@
 						</div>
 					</li>
 					
-					<li>
+					<li class="three">
 						<div class="resumeIcon">
 							<div class="icon icon-basic-book">
 								<i class="fa fa-book"></i>
@@ -213,7 +222,7 @@
 
                     <ul class="resumeList">
                         <li class="resTitle"><h4>Employment</h4></li>
-                        <li>
+                        <li class="one">
                             <div class="resumeIcon">
                                 <div class="icon icon-basic-case">
                                 	<i class="fa fa-suitcase"></i>
@@ -226,7 +235,7 @@
                             </div>
                         </li>
                         
-                        <li>
+                        <li class="two">
                             <div class="resumeIcon">
                                 <div class="icon icon-basic-case">
                                 	<i class="fa fa-suitcase"></i>
@@ -240,7 +249,7 @@
                         </li>
                         <br>
                        
-                        <li>
+                        <li class="three">
                             <div class="resumeIcon">
                                 <div class="icon icon-basic-case">
                                 	<i class="fa fa-suitcase"></i>
@@ -271,118 +280,149 @@
     <div id="masonry-grid" class="mGrid" style="postion: relative; height: 751px;">
     	<div class="gutter-sizer"></div>
 
-
-    		  	<div class="grid-item item-five item-padding" style="postion: relative; left:0px; top: 0px">
-	            	<a class="image-modal" href="/graphicDesign">
-	            		<img src="img/p6.jpg">
+    			<div class="col-md-4 col-xs-4">
+    		  	<div class="grid-item item-five item-padding">
+	            	<a class="graphic" href="/graphicDesign">
+	            		<img src="img/p6.jpg" class="img-responsive">
 	            			<div class="itemHover">
 			                    <h6>Graphic Designer</h6>
 			                    <h4>Portfolio</h4>
 			                 </div>
 			        </a>
-			        <div id="image-modal1" class="mfp-hide modal-box">
-	                  	<img src="img/p6.jpg">
-		                <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		                </div>
-		            </div>
+			     </div>
 		        </div>
 		   
-
-		    
-		        <div class="grid-item item-five item-padding" style="float:right; position: relative;top:-200px">
-	            	<a class="image-modal" href="#image-modal2">
-	            		<img src="img/p5.jpg">
-	            			<div class="itemHover">
-			                    <h6>Bussiness Website</h6>
-			                    <h4>Unitrans</h4>
-			                 </div>
-			        </a>
-			        <div id="image-modal2" class="mfp-hide modal-box">
-	                  	<img src="img/p5.jpg" class="img-responsive">
-		                <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		                </div>
-		            </div>
-		        </div>
-		   
-
-
-		    
-		        <div class="grid-item item-five item-padding" style="float:right; position: relative;top:0px; left:300px;">
-	            	<a class="image-modal" href="#image-modal3">
-	            		<img src="img/p4.png">
+		        <div class="col-md-4 col-xs-4">
+		        <div class="grid-item item-five item-padding">
+	            	<a class="37signal" href="37Signal">
+	            		<img src="img/p4.png" class="img-responsive">
 	            			<div class="itemHover">
 			                    <h6>Bussiness Website</h6>
 			                    <h4>37signal Replica</h4>
 			                 </div>
 			        </a>
-			        <div id="image-modal3" class="mfp-hide modal-box">
-	                  	<img src="img/p4.png">
-		                <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		                </div>
-		            </div>
+			    </div>
 		        </div>
-		   	
-		    	<div class="one">
-		         <div class="grid-item item-five item-padding-top" style="float:right; position: relative; top:-50px; right: 10px;">
-	            	<a class="image-modal" href="#image-modal4">
+
+
+
+		        <div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="avire" href="/avire" class="img-responsive">
 	            		<img src="img/p3.png">
 	            			<div class="itemHover">
 			                    <h6>Bussiness Website</h6>
 			                    <h4>AVIRE</h4>
 			                 </div>
 			        </a>
-			        <div id="image-modal4" class="mfp-hide modal-box">
-	                  	<img src="img/p3.png">
-		                <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		                </div>
-		            </div>
+			       
 		        </div>
 		    	</div>
 
 
 
+
+		    	<div class="col-md-4 col-xs-4">
+		        <div class="grid-item item-five item-padding">
+	            	<a class="unitrans" href="/Unitrans-Project">
+	            		<img src="img/p5.jpg" class="img-responsive">
+	            			<div class="itemHover">
+			                    <h6>Bussiness Website</h6>
+			                    <h4>Unitrans</h4>
+			                 </div>
+			        </a>
+			     </div>
+		        </div>
+		   	
+		    	
   			
-		    	<div class="one">
-		         <div class="grid-item item-five item-padding" style="float:right; position: relative;top:-200px; right:300px">
-	            	<a class="image-modal" href="#image-modal5">
+		    	<div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="flat" href="/advanced3" class="img-responsive">
 	            		<img src="img/p2.png" >
 	            			<div class="itemHover">
 			                    <h6>Flat Designs</h6>
 			                    <h4>colors</h4>
 			                 </div>
 			        </a>
-			        <div id="image-modal5" class="mfp-hide modal-box">
-	                  	<img src="img/p2.png" >
-		                <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		                </div>
-		            </div>
+			        
 		        </div>
 		  		</div>
 
 
 
-		  		<div class="one">
-		         <div class="grid-item item-five item-padding" style="float:right; position: relative; top:-400px">
-	            	<a class="image-modal" href="#image-modal6">
-	            		<img src="img/p1.png">
+		  		<div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="gem" href="/intermediate3">
+	            		<img src="img/p7.png" class="img-responsive">
+	            			<div class="itemHover">
+			                    <h6>Portfolio </h6>
+			                    <h4>Liqiud Gem</h4>
+			                 </div>
+			        </a>
+			        
+		    </div>
+		    </div>
+
+
+		    <div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="metroApp" href="/advanced2">
+	            		<img src="img/p1.png" class="img-responsive">
 	            			<div class="itemHover">
 			                    <h6>Bussiness Website</h6>
 			                    <h4>Metro App</h4>
 			                 </div>
 			        </a>
-			        <div id="image-modal6" class="mfp-hide modal-box">
-	                  	<img src="img/p1.png">
-		            <div class="modal-box-content">
-		                 	<h6>contact me if intersted on this design</h6>
-		            </div>
-		        </div>
+			        
 		    </div>
 		    </div>
+
+
+		    <div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="pico" href="/Intermediatesitereplication">
+	            		<img src="img/p8.png" class="img-responsive">
+	            			<div class="itemHover">
+			                    <h6>Bussiness Website</h6>
+			                    <h4>Pico</h4>
+			                 </div>
+			        </a>
+			        
+		    </div>
+		    </div>
+
+
+		    <div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="MyFolio" href="/intermidiate2">
+	            		<img src="img/p9.png" class="img-responsive">
+	            			<div class="itemHover">
+			                    <h6>Portfolio</h6>
+			                    <h4>My Folio</h4>
+			                 </div>
+			        </a>
+			        
+		    </div>
+		    </div>
+
+		   <div class="col-md-4 col-xs-4"></div>
+		   	 <div class="col-md-4 col-xs-4">
+		         <div class="grid-item item-five item-padding">
+	            	<a class="zodiac" href="/zodiac">
+	            		<img src="img/p10.png" class="img-responsive">
+	            			<div class="itemHover">
+			                    <h6>Simple JavaScript</h6>
+			                    <h4>Zodiac</h4>
+			                 </div>
+			        </a>
+			        
+		    </div>
+		    </div>	   
+
+		     <div class="col-md-4 col-xs-4"></div>
+
+		     
 	</div>
 	</div>
 </section> 

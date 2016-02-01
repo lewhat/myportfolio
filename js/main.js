@@ -83,7 +83,7 @@ if ( typeof define === 'function' && define.amd ) {
 $(document).ready(function(){
 
     $('navbar-fixed-top').each(function(){
-      sections.push($($(this).attr('href')));
+     sections.push($($(this).attr('href')));
     });   
 
 });
@@ -92,3 +92,103 @@ $(document).ready(function(){
   
 
 $('body').scrollspy({ target: '#navbar-example' })
+
+/*scroll fade*/
+
+$(window).on("load",function() {
+  function fade() {
+    $('.storyText').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the object is completely visible in the window, fade it in */
+      if (objectBottom < windowBottom) {
+        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+      } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }
+  fade(); //Fade in completely visible elements during page-load
+  $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
+
+$(window).on("load",function() {
+  function fade() {
+    $('.myLife').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the object is completely visible in the window, fade it in */
+      if (objectBottom < windowBottom) {
+        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+      } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }
+  fade(); //Fade in completely visible elements during page-load
+  $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
+
+
+$(window).on("load",function() {
+  function fade() {
+    $('.one').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the object is completely visible in the window, fade it in */
+      if (objectBottom < windowBottom) {
+        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+      } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(1000,0);}
+      }
+    });
+  }
+  fade(); //Fade in completely visible elements during page-load
+  $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
+
+
+$(window).on("load",function() {
+  function fade() {
+    $('.two').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the object is completely visible in the window, fade it in */
+      if (objectBottom < windowBottom) {
+        if ($(this).css('opacity')==0) {$(this).fadeTo(750,1);}
+      } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(750,0);}
+      }
+    });
+  }
+  fade(); //Fade in completely visible elements during page-load
+  $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
+
+
+$(window).on("load",function() {
+  function fade() {
+    $('.three').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the object is completely visible in the window, fade it in */
+      if (objectBottom < windowBottom) {
+        if ($(this).css('opacity')==0) {$(this).fadeTo(1000,1);}
+      } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }
+  fade(); //Fade in completely visible elements during page-load
+  $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
