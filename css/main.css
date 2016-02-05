@@ -54,7 +54,7 @@ body{
   	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
   	position: fixed;
   	top: 0px;
-  	background: rgba(0.2,0,0,0);
+  	background: rgba(1,1,1,0.5);
   	box-shadow: 0px 7px 16px 0px rgba(20, 20, 20, 0.1);
   	margin-left: 0px;
 
@@ -263,8 +263,8 @@ body{
 .uni {
 	display: block;
 	position: relative;
-	left: 10%;
-	top: 200px;
+	left: 8%;
+	top: 250px;
 	margin: 0 auto;
 }
 
@@ -738,5 +738,15 @@ body{
 	 .uni, .capo{
 		display: none;
 	}
-	
+	.itemHover h6, .itemHover h4 {
+		font-size: 75%;
+	}
+	.itemHover h6 {
+		font-weight: bolder;
+	}
+}
+@media(max-width: 700px) {
+	.itemHover h6, .itemHover h4 {
+		display: none;
+	}
 }
