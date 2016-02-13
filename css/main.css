@@ -3,18 +3,18 @@ html{
 	background-color:#fff;
 	max-width: 100%;
 }
-/*html, body {
+html, body {
 	max-width: 100%;
 	overflow-x:hidden;
-}*/
+}
 body{
 	height: 100%;
 	padding: 0px;
 	position: relative;
 	margin:auto;
   	font-family: 'Open Sans', sans-serif;
-  	background-color: #333; 
-  	max-width: 95%;
+  	background-color: #fff; 
+  	max-width: 100%;
   	
    }
 
@@ -50,7 +50,7 @@ body{
 
 #headerBar {
 	z-index:9999;
-  	width: 95%;
+  	width: 100%;
   	height: auto;
   	min-height: 80px;
   	-webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
@@ -58,7 +58,7 @@ body{
   	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
   	position: fixed;
   	top: 0px;
-  	background: rgba(1,1,1,0.5);
+  	background: #fff;
   	box-shadow: 0px 7px 16px 0px rgba(20, 20, 20, 0.1);
   	margin-left: 0px;
 
@@ -75,9 +75,17 @@ body{
 	text-align: left;
 	padding: 0;
 }
-.navbar-collapse {padding-left: 0px;}
-.navbar {margin-bottom: 0;-webkit-padding-start: 0px;}
-.navbar li{display: inline-block;margin: 0 20px;}
+.navbar-collapse {
+	padding-left: 0px;
+}
+.navbar {
+	margin-bottom: 0;
+	-webkit-padding-start: 0px;
+}
+.navbar li{
+	display: inline-block;
+	margin: 0 20px;
+}
 .navbar li a{
   	font-weight: 400;
   	font-size: 12px;
@@ -91,14 +99,16 @@ body{
   	transition: 0.3s;
   	font-family: "Montserrat", sans-serif;
   	text-transform: uppercase;
-  	color: #c8b098;
+  	color: #111;
 }
 .navbar li.active a {
 	color: #a74752;
 	border-bottom: 5px solid #a74752;
 }
 .navbar li a:hover{
-	color:#42dca3;
+	color:#a74752;
+	font-family: "Tangerine", sans-serif;
+	font-weight: bolder;
 }
 .navbar-toggle {
 	font-size: 30px;
@@ -114,7 +124,7 @@ body{
   	min-height: 670px;
   	margin-bottom: 0px;
 	background-size: cover; 
-  	background-color: transparent;
+  	background-color: #c3d7d8;
 
 }  	
 
@@ -133,18 +143,17 @@ body{
 	letter-spacing: 0.08em;
 	font-size: 40px;
 	font-weight: 700;
-	color: #c8b098;
+	color: #000;
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
 }
 
 .textIntro h4{
-	color:#fff;
+	color:#a74752;
 	padding: 20px 0px;
 	padding-bottom: 0px;
 	font-family: "Tangerine", sans-serif;
 	font-size: 30px;
-	color: #fff;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -158,7 +167,27 @@ body{
 	max-width: 600px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	color:#42dca3 !important;
+	color:#222;
+}
+
+.quote {
+	position: relative;
+	display:block;
+	background-color: #a74752;
+	margin: 0;
+	
+	
+	
+}
+.quote h6 {
+	font-family: 'Tangerine', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	color:#fff;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
 }
 
 .office {
@@ -173,12 +202,13 @@ body{
 
 #sectionAbout{
 	padding-bottom: 100px;
-	background: rgba(0,0,0,0.4);
+	background: #fff;
 }
 .sectionTitle{
 	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
+
 }
 .LessPaddingTitle{
 	padding-bottom: 70px;
@@ -188,14 +218,15 @@ body{
 	letter-spacing: 1px;
 	font-weight: 800;
 	font-size: 40px;
-	color:#c8b098;
+	color:#000;
+	text-transform: uppercase;
 }
 .sectionTitle h6{
 	font-family: 'Tangerine', sans-serif;
 	font-size: 14px;
 	line-height: 30px;
 	letter-spacing: 1px;
-	color:#fff;
+	color:#a74752;
 	font-size: 30px;
 	font-weight: 700;
 }
@@ -205,7 +236,11 @@ body{
 	text-align: left;
 	background-color: transparent;
 }
-
+.about {
+	background-color:#f9f7f8; 
+	margin: 0 30px;
+	height:382px;
+}
 .storyText{
 	padding: 25px;
 }
@@ -216,13 +251,13 @@ body{
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 40px;
-	color: #fff;
+	color: #111;
 }
 
 .storyText h6{
 	font-family: "Montserrat", sans-serif;
 	font-size: 12px;
-	color:#42dca3;
+	color:#a74752;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -236,13 +271,13 @@ body{
 	margin-bottom: 30px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color:#c8b098;
+	color:#222;
 }
 .toughm{
 	text-align: right;
 	margin-left: 280px !important;
 	position: relative;
-	top: -50px;
+	top: 0px;
 	left: -300px;
 	border: 1px solid transparent;
 }
@@ -250,21 +285,23 @@ body{
 .myLife h6{
 	font-family: 'Roboto Slab', sans-serif;
 	font-size: 15px;
-	color:#42dca3;
+	color:#222;
 	letter-spacing: 0.1em;
 	
 	font-weight: 300;
 }
 
 .skills {
-	color: #fff;
+	color:#a74752;
 	font-family: 'Roboto Slab', sans-serif;
+	font-weight: bolder;
+	font-size: 18px;
 }
 
 
 /*Resume*/
 #sectionResume{
-	background: rgba(0,0,0,0.2);
+	background: #c3d7d8;
 	padding-bottom: 100px;
 }
 
@@ -298,17 +335,20 @@ body{
 }
 .resumeList li {
 	list-style: none;
-	background:transparent;
+	background:#fff;
 	padding: 20px 20px 10px 20px;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 }
 .resumeList h4 {
 	text-transform: uppercase;
 	font-size: 20px;
 	letter-spacing: 0.08em;
 	font-weight: 700;
-	margin-bottom: 15px;
+	
 	font-family: "Montserrat", sans-serif;
+	background-color: #a74752;
+	padding: 50px;
+	margin: 0;
 }
 .resumeList h5 {
 	text-transform: uppercase;
@@ -317,13 +357,13 @@ body{
 	font-weight: 700;
 	margin-bottom: 5px;
 	font-family: "Montserrat", sans-serif;
-	color:#42dca3;
+	color:#000;
 }
 .resumeList span {
 	font-family: 'Tangerine', sans-serif;
 	font-size: 30px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	color: #a74752;
 	font-weight: 700;
 }
@@ -334,14 +374,14 @@ body{
 	line-height: 30px;
 	font-weight: 300;
 	letter-spacing: 1px;
-	color:#42dca3;
+	color:#111;
 }
 .resumeIcon {
 	float: left;
 	font-size: 30px;
 	width: 50px;
 	height: 50px;
-	background: #42dca3;
+	background: #a74752;
 	color:#fff;
 	padding: 8px 11px;
 	border-radius: 50%;
@@ -356,12 +396,13 @@ body{
 	border-top:1px solid #fff;
 }
 
+
 /* Portfolio */
 
 
 #sectionPortfolio {
 	padding-bottom: 100px;
-	background: rgba(0,0,0,0.6);
+	background: #f9f7f8;
 
 }
 .mGrid img{
@@ -455,7 +496,7 @@ body{
 #sectionContact {
 	margin-bottom: 0px;
 	padding-bottom: 100px;
-	background: rgba(0,0,0,0.4);
+	background: #c3d7d8;
 }
 .LessPaddingTitle h1, .LessPaddingTitle h6 {
 	position: relative;
@@ -463,6 +504,11 @@ body{
 	top: 320px;
 
 }
+#sectionContact h1 {
+	color: #fff;
+}
+
+
 
 .moto {
 	position: relative;
@@ -743,9 +789,13 @@ body{
 	.about img{
 		display: none;
 	}
+	
+	.myLife {
+		display: none;
+	}
 }
 @media(max-width: 1000px) {
-	 .uni, .capo{
+	 .uni, .capo,{
 		display: none;
 	}
 	.itemHover h6, .itemHover h4 {
@@ -753,6 +803,13 @@ body{
 	}
 	.itemHover h6 {
 		font-weight: bolder;
+	}
+	.about{
+		background-color: #fff;
+	}
+
+	.about img{
+		display: none;
 	}
 }
 @media(max-width: 700px) {
