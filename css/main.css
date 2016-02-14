@@ -113,7 +113,7 @@ body{
 .navbar-toggle {
 	font-size: 30px;
 	cursor: pointer;
-	color: #fff;
+	color: #111;
 }
 
 /* Intro */
@@ -121,7 +121,7 @@ body{
 #sectionIntro {
   	position: relative;
   	width: 100%;
-  	min-height: 670px;
+  	max-height: 100%;
   	margin-bottom: 0px;
 	background-size: cover; 
   	background-color: #c3d7d8;

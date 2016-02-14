@@ -77,8 +77,7 @@ $(document).ready(function(){
 })
 
 
-  
-
+/* ================================================================ */
 $('body').scrollspy({ target: '#navbar-example' })
 
 /*scroll fade*/
@@ -209,5 +208,7 @@ $(window).on("load",function() {
 
 
 
+
+  
 
   
