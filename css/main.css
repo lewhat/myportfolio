@@ -11,7 +11,7 @@ body{
 	height: 100%;
 	padding: 0px;
 	position: relative;
-	margin:auto;
+	margin-top: 40px;
   	font-family: 'Open Sans', sans-serif;
   	background-color: #fff; 
   	max-width: 100%;
@@ -65,6 +65,7 @@ body{
 }
 #headerBar .container {
 	padding: 0;
+	margin-bottom: -20px;
 }
 .headerLeft {
 	text-align: left;
@@ -119,14 +120,18 @@ body{
 /* Intro */
 
 #sectionIntro {
-  	position: relative;
+	display: table;
   	width: 100%;
-  	max-height: 100%;
-  	margin-bottom: 0px;
-	background-size: cover; 
+  	height: auto;
+  	margin-top: -80px;
+  	padding-top: 80px;
   	background-color: #c3d7d8;
-
+  	
 }  	
+.intro {
+	padding-bottom: 300px;
+
+}
 
 .textIntro {
 	margin-right: auto;
@@ -146,6 +151,7 @@ body{
 	color: #000;
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
+
 }
 
 .textIntro h4{
@@ -174,7 +180,9 @@ body{
 	position: relative;
 	display:block;
 	background-color: #a74752;
-	margin: 0;
+	margin-top: 50px;
+	padding-bottom: 30px;
+	margin-bottom: 0px;
 	
 	
 	
@@ -196,22 +204,34 @@ body{
 	z-index: 1;
 }
 
+.arrow-down img{
+	display: inline;
+	position: relative;
+	top: 100px;
+	left: 50%;
+}
+
+
 
 /*About*/
 
 
 #sectionAbout{
-	padding-bottom: 100px;
+	margin-top: -80px;
+  	padding-top: 60px;
 	background: #fff;
+	height: auto;
 }
 .sectionTitle{
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-bottom: 100px;
+	
 	text-align: center;
 
 }
 .LessPaddingTitle{
 	padding-bottom: 70px;
+
 }
 .sectionTitle h1{
 	font-family: "Montserrat", serif;
@@ -238,8 +258,9 @@ body{
 }
 .about {
 	background-color:#f9f7f8; 
-	margin: 0 30px;
-	height:382px;
+	margin: 0 60px;
+	height:410px;
+
 }
 .storyText{
 	padding: 25px;
@@ -291,18 +312,44 @@ body{
 	font-weight: 300;
 }
 
+/*skills*/
+#sectionSkills {
+	background-color: #fff;
+	height: 700px;
+	margin-top: -40px;
+  	padding-top: 60px;
+}
 .skills {
 	color:#a74752;
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: bolder;
 	font-size: 18px;
+	display: block;
+	padding-top: 50px;
+	font-weight: bolder;
+}
+
+.skills h2 {
+	position: relative;
+	top: 100px;
+	color: #111;
+	font-weight: 800;
+	text-decoration:underline;
+}
+
+.skills h4 {
+	position: relative;
+	left:150px;
+	bottom: 100px;
+	color: #a74752;
 }
 
 
 /*Resume*/
 #sectionResume{
 	background: #c3d7d8;
-	padding-bottom: 100px;
+	margin-top: -40px;
+  	padding-top: 60px;
 }
 
 
@@ -401,7 +448,8 @@ body{
 
 
 #sectionPortfolio {
-	padding-bottom: 100px;
+	margin-top: -40px;
+  	padding-top: 60px;
 	background: #f9f7f8;
 
 }
@@ -497,6 +545,8 @@ body{
 	margin-bottom: 0px;
 	padding-bottom: 100px;
 	background: #c3d7d8;
+	margin-top: -40px;
+  	padding-top: 60px;
 }
 .LessPaddingTitle h1, .LessPaddingTitle h6 {
 	position: relative;
@@ -790,12 +840,12 @@ body{
 		display: none;
 	}
 	
-	.myLife {
+	.myLife, .skills h4 {
 		display: none;
 	}
 }
 @media(max-width: 1000px) {
-	 .uni, .capo,{
+	 .uni, .capo{
 		display: none;
 	}
 	.itemHover h6, .itemHover h4 {

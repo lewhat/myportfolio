@@ -48,13 +48,16 @@ $(document).ready(function(){
             $('html,body').scrollTo(this.hash, this.hash); 
         });
         
-        
+
+       
         
        /**
          * This part handles the highlighting functionality.
          * We use the scroll functionality again, some array creation and 
          * manipulation, class adding and class removing, and conditional testing
          */
+
+    
         var aChildren = $("navbar li").children(); // find the a children of the list items
         var aArray = []; // create the empty aArray
         for (var i=0; i < aChildren.length; i++) {    
@@ -88,3 +91,4 @@ $(document).ready(function(){
             }
         });
     });
+
